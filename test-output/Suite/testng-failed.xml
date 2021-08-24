@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="userManagementPack.AddingNewTeamTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="addingNewTeamTest"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- userManagementPack.AddingNewTeamTest -->
+      <class name="userManagementPack.CreatingPostsalesUserTest">
+        <methods>
+          <include name="sales_presalesLogin"/>
+          <include name="creatingPostsalesUserTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingPostsalesUserTest -->
+      <class name="exportPackage.ExportUserLogsTest">
+        <methods>
+          <include name="exportUserLogsTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportUserLogsTest -->
+      <class name="exportPackage.ExportLeadsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="exportLeadsTest"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportLeadsTest -->
+      <class name="userManagementPack.EditingUserTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="editingUserTest"/>
+        </methods>
+      </class> <!-- userManagementPack.EditingUserTest -->
+      <class name="userManagementPack.CreatingAdminUserTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="creatingAdminUserTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingAdminUserTest -->
+      <class name="exportPackage.ExportInvoices_ItemizedBill_EmailTest">
+        <methods>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="exportInvoices_ItemizedBill_EmailTest"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_EmailTest -->
+      <class name="userManagementPack.CreatingClient_UnfilledformTest">
+        <methods>
+          <include name="adminLogin"/>
+          <include name="creatingClient_UnfilledformTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingClient_UnfilledformTest -->
+      <class name="userManagementPack.CreatingPresalesUserTest">
+        <methods>
+          <include name="creatingPresalesUserTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingPresalesUserTest -->
+      <class name="exportPackage.ExportUsersTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="exportUsersTest"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportUsersTest -->
+      <class name="exportPackage.ExportTasksTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="exportTasksTest"/>
+        </methods>
+      </class> <!-- exportPackage.ExportTasksTest -->
+      <class name="exportPackage.ExportCallsTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="exportCallsTest"/>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- exportPackage.ExportCallsTest -->
+      <class name="exportPackage.ExportProjectUnitsTest">
+        <methods>
+          <include name="exportProjectUnitsTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- exportPackage.ExportProjectUnitsTest -->
+      <class name="userManagementPack.SearchingUserTest">
+        <methods>
+          <include name="searchingUserTest"/>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- userManagementPack.SearchingUserTest -->
+      <class name="exportPackage.ExportSitevisitsTest">
+        <methods>
+          <include name="sales_presalesLogin"/>
+          <include name="exportSitevisitsTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- exportPackage.ExportSitevisitsTest -->
+      <class name="exportPackage.ExportInvoices_ItemizedBill_CalllTest">
+        <methods>
+          <include name="exportInvoices_ItemizedBill_CalllTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_CalllTest -->
+      <class name="exportPackage.ExportProjectsTest">
+        <methods>
+          <include name="exportProjectsTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportProjectsTest -->
+      <class name="userManagementPack.EditTeamTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="editTeamTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- userManagementPack.EditTeamTest -->
+      <class name="userManagementPack.CreatingPostsalesManagerTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="creatingPostsalesManagerTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingPostsalesManagerTest -->
+      <class name="exportPackage.ExportVirtualNumbersTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="exportVirtualNumbersTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- exportPackage.ExportVirtualNumbersTest -->
+      <class name="exportPackage.ExportBookingsTest">
+        <methods>
+          <include name="exportBookingsTest"/>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- exportPackage.ExportBookingsTest -->
+      <class name="exportPackage.ExportFollowupsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="exportFollowupsTest"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportFollowupsTest -->
+      <class name="exportPackage.ExportInvoices_ItemizedBill_MarketingActivityTest">
+        <methods>
+          <include name="exportInvoices_ItemizedBill_MarketingActivityTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_MarketingActivityTest -->
+      <class name="userManagementPack.CreatingSalesManagerTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="creatingSalesManagerTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingSalesManagerTest -->
+      <class name="userManagementPack.CreatingSalesUserTest">
+        <methods>
+          <include name="creatingSalesUserTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingSalesUserTest -->
+      <class name="userManagementPack.ClientCreationPostPaid">
+        <methods>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="adminLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="creatingClientfromSupport"/>
+        </methods>
+      </class> <!-- userManagementPack.ClientCreationPostPaid -->
+      <class name="userManagementPack.CreatingPresalesManagerTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="creatingPresalesManagerTest"/>
+          <include name="getResult"/>
+          <include name="sales_presalesLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- userManagementPack.CreatingPresalesManagerTest -->
+      <class name="exportPackage.ExportInvoices_ItemizedBill_SMSTest">
+        <methods>
+          <include name="exportInvoices_ItemizedBill_SMSTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="sales_presalesLogin"/>
+        </methods>
+      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_SMSTest -->
+      <class name="exportPackage.ExportPartnersTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="exportPartnetsTest"/>
+          <include name="sales_presalesLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- exportPackage.ExportPartnersTest -->
+      <class name="exportPackage.ExportCampaignsTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="setUp"/>
+          <include name="sales_presalesLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="exportCampaignsTest"/>
+        </methods>
+      </class> <!-- exportPackage.ExportCampaignsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
