@@ -55,20 +55,20 @@ public class SetUp {
 			driver = new FirefoxDriver();
 		} else if (p.getProperty("browser").contains("chrome")) {
 
-			//System.setProperty("webdriver.chrome.driver", "//home//amura//SeleniumStuffs//chromedriver");
+			System.setProperty("webdriver.chrome.driver", "//home//amura//SeleniumStuffs//chromedriver");
 			
 			// To run on local comment above and uncomment below			
-			System.setProperty("webdriver.chrome.driver","/home/selldo/Downloads/Software/chromedriver");
+			//System.setProperty("webdriver.chrome.driver","/home/selldo/Downloads/Software/chromedriver");
 
 				
 			//To upload file in headless mode
-		//System.setProperty("java.awt.headless", "false");
+			System.setProperty("java.awt.headless", "false");
 
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--start-maximized");
 
 			// To run scripts in headless mode on jenkins
-			//options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+			options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
 
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
