@@ -24,8 +24,8 @@ public class FollowupsPage extends SetUp {
 	By cancelNoteText = By.cssSelector("textarea[placeholder=\"Notes\"]");
 	By cancelFollowupButton = By.xpath("//button[text()='Cancel Followup']");
 	By ignoreAndScheduleButton = By.xpath("//button[text()=' Ignore & Schedule ']");
-	
-	
+	By cancelFollowupForPostSalesButton = By.xpath("//button[text()='Cancel']");
+	By ScheduleFollowupButtonForPostSales = By.xpath("//button[contains(@class,'btn btn-primary submit_form')]");
 
 	WebDriver driver = null;
 
@@ -106,5 +106,17 @@ public class FollowupsPage extends SetUp {
 	public void clickCancelFollowupButton() {
 		driver.findElement(cancelFollowupButton).click();
 	}
+	
+	// Clicking on Schedule Followup button for post sales
+			public void clickOnScheduleFollowupButtonForPostSales() {
+				driver.findElement(ScheduleFollowupButtonForPostSales).click();
+			}
+	
+		
+		// Clicking on Cancel Follow up button PostSales
+			public void clickCancelFollowupForPostSalesButton() {
+				driver.findElement(cancelFollowupForPostSalesButton).click();
+			}
+	
 
 }

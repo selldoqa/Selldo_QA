@@ -22,6 +22,8 @@ public class GetTestData {
 	public String maxBudget = faker.numerify("100000");
 	public String team = faker.letterify("amura");
 	public String locationPreference = faker.letterify("Pune");
+	public String title = faker.letterify("Get Document");
+	public String description = faker.sentence(15);
 	
 
 

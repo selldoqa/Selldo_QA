@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest">
+      <class name="PostSalesPack.bookedLeadSearchTest">
         <methods>
-          <include name="addingNewLeadWithFilledForm_PresalesTest"/>
-          <include name="endingTest"/>
+          <include name="searchingLeadByPostSalesManagerTest"/>
           <include name="setUp"/>
+          <include name="endingTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
-          <include name="appLogin"/>
+          <include name="postsales_PostsalesManagerLogin"/>
         </methods>
-      </class> <!-- otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest -->
+      </class> <!-- PostSalesPack.bookedLeadSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
