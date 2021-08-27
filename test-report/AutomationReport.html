@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 18, 2021 06:45:56 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 27, 2021 04:09:53 PM</span>
 				</a>
 			</li>
 			<li>
@@ -142,7 +142,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='37.5%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='62.5%'>5</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='60%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -159,15 +159,15 @@
 				
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>DocumentTest</span>
-						<span class='test-time'>Aug 18, 2021 06:46:18 PM</span>
+						<span class='test-name'>searchingLeadByPostSalesManagerTest</span>
+						<span class='test-time'>Aug 27, 2021 04:10:10 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 18, 2021 06:46:18 PM</span>
-	<span class='label end-time'>Aug 18, 2021 06:46:45 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+173ms</span>
+	<span class='label start-time'>Aug 27, 2021 04:10:10 PM</span>
+	<span class='label end-time'>Aug 27, 2021 04:10:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+87ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -181,48 +181,31 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:46:18 PM</td>
-					<td class='step-details'>Clicking on Documents Icon.......</td>
+					<td class='timestamp'>4:10:14 PM</td>
+					<td class='step-details'>Searching lead by Id.......</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:46:20 PM</td>
-					<td class='step-details'>Creating new folder.......</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:46:20 PM</td>
-					<td class='step-details'>Opening folder.......</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:46:20 PM</td>
-					<td class='step-details'>Uploading New file.......</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:46:22 PM</td>
-					<td class='step-details'>Deleting File.......</td>
+					<td class='timestamp'>4:10:28 PM</td>
+					<td class='step-details'>Clicking on Edit Icon to open lead edit form.......</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:46:45 PM</td>
-					<td class='step-details'><span class='label white-text red'>searchingFileTest Test case FAILED due to below issues:</span></td>
+					<td class='timestamp'>4:10:28 PM</td>
+					<td class='step-details'><span class='label white-text red'>searchingLeadByPostSalesManagerTest Test case FAILED due to below issues:</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:46:45 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[title="Delete"]"}
+					<td class='timestamp'>4:10:28 PM</td>
+					<td class='step-details'><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <i class="ion-edit mr-0" style="font-size:16px;"></i> is not clickable at point (311, 147). Other element would receive the click: <div class="block_ui">...</div>
   (Session info: chrome=92.0.4515.159)
-  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-25-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-27-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '11.0.11'
+System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-27-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:39529}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.YD4Nnz}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.159, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4f3474eefcf1d9ea9969f8937dc04842
-*** Element info: {Using=css selector, value=a[title="Delete"]}
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43539}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.Y8SKnL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.159, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7821d9afd50b4ba0b9ee9f1d8351748b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -230,12 +213,10 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at adminPages.DocumentsPage.deleteFile(DocumentsPage.java:61)
-	at otherLeadActivitiesPack.DocumentTest.searchingFileTest(DocumentTest.java:94)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at postSales.PostSalesDashboardPage.clickOnEditIcon(PostSalesDashboardPage.java:87)
+	at PostSalesPack.bookedLeadSearchTest.searchingLeadByPostSalesManagerTest(bookedLeadSearchTest.java:110)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -258,20 +239,21 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></td>
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:46:45 PM</td>
-					<td class='step-details'>Failure Snapshot below: com.aventstack.extentreports.ExtentTest@1d1f7216</td>
+					<td class='timestamp'>4:10:28 PM</td>
+					<td class='step-details'>Failure Snapshot below: com.aventstack.extentreports.ExtentTest@537b32ef</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='/home/selldo/Documents/estate test scripts/ErrorScreenshots/searchingFileTest.png' width='10%' src='/home/selldo/Documents/estate test scripts/ErrorScreenshots/searchingFileTest.png' data-src='/home/selldo/Documents/estate test scripts/ErrorScreenshots/searchingFileTest.png'></li>
+								<li><img data-featherlight='/home/selldo/Documents/estate test scripts/ErrorScreenshots/searchingLeadByPostSalesManagerTest.png' width='10%' src='/home/selldo/Documents/estate test scripts/ErrorScreenshots/searchingLeadByPostSalesManagerTest.png' data-src='/home/selldo/Documents/estate test scripts/ErrorScreenshots/searchingLeadByPostSalesManagerTest.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -328,7 +310,7 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>org.openqa.selenium.WebDriverException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -343,19 +325,17 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 18, 2021 06:46:18 PM</td>
-                                                        <td class='linked' test-id='1'>DocumentTest</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[title="Delete"]"}
+                                                        <td>Aug 27, 2021 04:10:10 PM</td>
+                                                        <td class='linked' test-id='1'>searchingLeadByPostSalesManagerTest</td>
+                                                        <td><pre><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <i class="ion-edit mr-0" style="font-size:16px;"></i> is not clickable at point (311, 147). Other element would receive the click: <div class="block_ui">...</div>
   (Session info: chrome=92.0.4515.159)
-  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-25-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-27-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '11.0.11'
+System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-27-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:39529}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.YD4Nnz}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.159, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4f3474eefcf1d9ea9969f8937dc04842
-*** Element info: {Using=css selector, value=a[title="Delete"]}
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43539}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.Y8SKnL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.159, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7821d9afd50b4ba0b9ee9f1d8351748b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -363,12 +343,10 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at adminPages.DocumentsPage.deleteFile(DocumentsPage.java:61)
-	at otherLeadActivitiesPack.DocumentTest.searchingFileTest(DocumentTest.java:94)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at postSales.PostSalesDashboardPage.clickOnEditIcon(PostSalesDashboardPage.java:87)
+	at PostSalesPack.bookedLeadSearchTest.searchingLeadByPostSalesManagerTest(bookedLeadSearchTest.java:110)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -391,9 +369,10 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></pre></td>
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -425,25 +404,25 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 18, 2021 06:45:56 PM</div>
+					<div class='panel-lead'>Aug 27, 2021 04:09:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 18, 2021 06:46:49 PM</div>
+			 		<div class='panel-lead'>Aug 27, 2021 04:10:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>52,536ms</div>
+					<div class='panel-lead'>39,759ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -498,7 +477,7 @@ Session ID: 4f3474eefcf1d9ea9969f8937dc04842
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 5,
+				infoChild: 2,
 				exceptionsChild: 3,
 				
 				passGrandChild: 0,

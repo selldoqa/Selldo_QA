@@ -2,46 +2,42 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-17T09:30:15Z" name="Default suite" finished-at="2021-08-17T09:30:55Z" duration-ms="39851">
+  <suite started-at="2021-08-27T10:39:53Z" name="Default suite" finished-at="2021-08-27T10:40:33Z" duration-ms="39685">
     <groups>
     </groups>
-    <test started-at="2021-08-17T09:30:15Z" name="Default test" finished-at="2021-08-17T09:30:55Z" duration-ms="39851">
-      <class name="otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e]" started-at="2021-08-17T15:00:15Z" name="setUp" finished-at="2021-08-17T15:00:15Z" duration-ms="70" status="PASS">
+    <test started-at="2021-08-27T10:39:53Z" name="Default test" finished-at="2021-08-27T10:40:33Z" duration-ms="39685">
+      <class name="PostSalesPack.bookedLeadSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e]" started-at="2021-08-27T16:09:53Z" name="setUp" finished-at="2021-08-27T16:09:53Z" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="appLogin()[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e]" started-at="2021-08-17T15:00:15Z" name="appLogin" finished-at="2021-08-17T15:00:22Z" duration-ms="7564" status="PASS">
+        <test-method is-config="true" signature="postsales_PostsalesManagerLogin()[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e]" started-at="2021-08-27T16:09:53Z" name="postsales_PostsalesManagerLogin" finished-at="2021-08-27T16:10:10Z" duration-ms="17045" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appLogin -->
-        <test-method signature="addingNewLeadWithFilledForm_PresalesTest()[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e]" started-at="2021-08-17T15:00:23Z" name="addingNewLeadWithFilledForm_PresalesTest" finished-at="2021-08-17T15:00:48Z" duration-ms="25414" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- postsales_PostsalesManagerLogin -->
+        <test-method signature="searchingLeadByPostSalesManagerTest()[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e]" started-at="2021-08-27T16:10:10Z" name="searchingLeadByPostSalesManagerTest" finished-at="2021-08-27T16:10:28Z" duration-ms="17859" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"first_name"}
-  (Session info: chrome=92.0.4515.131)
-  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-25-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[unknown error: Element <i class="ion-edit mr-0" style="font-size:16px;"></i> is not clickable at point (311, 147). Other element would receive the click: <div class="block_ui">...</div>
+  (Session info: chrome=92.0.4515.159)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-27-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '11.0.11'
+System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-27-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:34103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.1jG6Yf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.131, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 60957fc9393493b9bc1e0db04913bfd5
-*** Element info: {Using=name, value=first_name}]]>
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43539}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.Y8SKnL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.159, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7821d9afd50b4ba0b9ee9f1d8351748b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"first_name"}
-  (Session info: chrome=92.0.4515.131)
-  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-25-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <i class="ion-edit mr-0" style="font-size:16px;"></i> is not clickable at point (311, 147). Other element would receive the click: <div class="block_ui">...</div>
+  (Session info: chrome=92.0.4515.159)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-27-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '11.0.11'
+System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-27-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:34103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.1jG6Yf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.131, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 60957fc9393493b9bc1e0db04913bfd5
-*** Element info: {Using=name, value=first_name}
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43539}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.Y8SKnL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.159, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7821d9afd50b4ba0b9ee9f1d8351748b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,12 +45,10 @@ Session ID: 60957fc9393493b9bc1e0db04913bfd5
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at crm.selldo.AddLeadFormPage.inputFirstName(AddLeadFormPage.java:81)
-	at otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest.addingNewLeadWithFilledForm_PresalesTest(AddingNewLeadWithFilledForm_PresalesTest.java:89)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at postSales.PostSalesDashboardPage.clickOnEditIcon(PostSalesDashboardPage.java:87)
+	at PostSalesPack.bookedLeadSearchTest.searchingLeadByPostSalesManagerTest(bookedLeadSearchTest.java:110)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,89 +76,30 @@ Session ID: 60957fc9393493b9bc1e0db04913bfd5
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addingNewLeadWithFilledForm_PresalesTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e]" started-at="2021-08-17T15:00:48Z" name="getResult" finished-at="2021-08-17T15:00:48Z" duration-ms="191" status="PASS">
+        </test-method> <!-- searchingLeadByPostSalesManagerTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e]" started-at="2021-08-27T16:10:28Z" name="getResult" finished-at="2021-08-27T16:10:28Z" duration-ms="229" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingNewLeadWithFilledForm_PresalesTest status=FAILURE method=AddingNewLeadWithFilledForm_PresalesTest.addingNewLeadWithFilledForm_PresalesTest()[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e] output={null}]]]>
+                <![CDATA[[TestResult name=searchingLeadByPostSalesManagerTest status=FAILURE method=bookedLeadSearchTest.searchingLeadByPostSalesManagerTest()[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endingTest()[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e]" started-at="2021-08-17T15:00:48Z" name="endingTest" finished-at="2021-08-17T15:00:55Z" duration-ms="6666" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <i id="user-account-icon" class="ion-ios-contact"></i> is not clickable at point (1840, 28). Other element would receive the click: <i aria-hidden="true" class="ion-android-close"></i>
-  (Session info: chrome=92.0.4515.131)
-  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-25-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 39 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:34103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.1jG6Yf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.131, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 60957fc9393493b9bc1e0db04913bfd5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <i id="user-account-icon" class="ion-ios-contact"></i> is not clickable at point (1840, 28). Other element would receive the click: <i aria-hidden="true" class="ion-android-close"></i>
-  (Session info: chrome=92.0.4515.131)
-  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Linux 5.11.0-25-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 39 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'selldo-Vostro-3583', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:34103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=/tmp/.com.google.Chrome.1jG6Yf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=92.0.4515.131, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 60957fc9393493b9bc1e0db04913bfd5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at adminPages.AdminDashboardPage.loggingOut(AdminDashboardPage.java:106)
-	at otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest.endingTest(AddingNewLeadWithFilledForm_PresalesTest.java:63)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.TestRunner.afterRun(TestRunner.java:958)
-	at org.testng.TestRunner.run(TestRunner.java:606)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="endingTest()[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e]" started-at="2021-08-27T16:10:28Z" name="endingTest" finished-at="2021-08-27T16:10:33Z" duration-ms="4539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest@782859e]" started-at="2021-08-17T15:00:55Z" name="tearDown" finished-at="2021-08-17T15:00:55Z" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:PostSalesPack.bookedLeadSearchTest@782859e]" started-at="2021-08-27T16:10:33Z" name="tearDown" finished-at="2021-08-27T16:10:33Z" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- otherLeadActivitiesPack.AddingNewLeadWithFilledForm_PresalesTest -->
+      </class> <!-- PostSalesPack.bookedLeadSearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
