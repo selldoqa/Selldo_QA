@@ -148,9 +148,9 @@ public class addingNewCoapplicants extends SetUp {
 		 * getExtTest().log(Status.INFO, "Validating Lead name......");
 		 * Assert.assertEquals(driver.findElement(By.xpath("//tr[2]//td[3]//span[1]")).
 		 * getAttribute("innerHTML").trim(), leadName, "Not matched");
-		 * 
-		 * assertion.assertAll();
-		 */
+		 */ 
+		  assertion.assertAll();
+		 
 
 		
 	
