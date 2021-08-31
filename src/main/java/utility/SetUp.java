@@ -32,6 +32,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class SetUp {
+
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
@@ -43,7 +44,7 @@ public class SetUp {
 
 		Properties p = new Properties();
 		FileInputStream fi = new FileInputStream(
-				System.getProperty("user.dir") + "//src//main//java//Config File//global.properties");
+		System.getProperty("user.dir") + "//src//main//java//Config File//global.properties");
 		p.load(fi);
 
 		//new File(System.getProperty("user.dir") + "/src/main/java/com/qa/testdata/FreeCrmTestData.xlsx"))
@@ -162,7 +163,6 @@ public class SetUp {
 	}
 
 	@AfterSuite(alwaysRun = true)
-
 	public void tearDown() throws Exception{
 		extent.flush();
 
