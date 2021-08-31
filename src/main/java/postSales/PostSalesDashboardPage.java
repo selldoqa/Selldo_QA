@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utility.GetTestData;
 import utility.SetUp;
 
-public class PostSalesDashboardPage extends SetUp throws Exception{
+public class PostSalesDashboardPage extends SetUp {
 	
 	
 	By searchTextBox = By.cssSelector("#select2-drop > div > input");

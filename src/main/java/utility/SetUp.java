@@ -92,12 +92,12 @@ public class SetUp {
 		driver.manage().window().maximize();
 	}
 
-	public void setExtentTest(ExtentTest et) {
+	public void setExtentTest(ExtentTest et) throws Exception{
 
 		exTest.set(et);
 	}
 
-	public ExtentTest getExtTest() {
+	public ExtentTest getExtTest() throws Exception{
 
 		return exTest.get();
 	}
@@ -163,7 +163,7 @@ public class SetUp {
 
 	@AfterSuite(alwaysRun = true)
 
-	public void tearDown() {
+	public void tearDown() throws Exception{
 		extent.flush();
 
 	}
