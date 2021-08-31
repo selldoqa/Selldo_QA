@@ -47,7 +47,7 @@ public class TaskPage {
 		
 		
 		// Click Add A Task Link
-		public void addingTask() throws InterruptedException {
+		public void addingTask() throws Exception {
 			Thread.sleep(2000);
 			driver.findElement(addaTask).click();
 			Thread.sleep(2000);
@@ -90,7 +90,7 @@ public class TaskPage {
 
 		// Clicking on Schedule On Time field
 		
-		public String selectSalesUser(String salesUserName) throws InterruptedException
+		public String selectSalesUser(String salesUserName) throws Exception
 		{
 			driver.findElement(By.xpath("//span[@class='select2-chosen']"));  // Clicking on User // dropdown
 			
@@ -102,7 +102,7 @@ public class TaskPage {
 		}
 		
 		// Clicking on Schedule On Time field
-		public void clickOnUploadAttachments()throws InterruptedException {
+		public void clickOnUploadAttachments()throws Exception {
 			Thread.sleep(4000);
 			
 			 WebElement Element = driver.findElement(UploadattachmentButton);

@@ -39,7 +39,7 @@ public class SetUp {
 
 	public WebDriver driver = null;
 
-	public void mysetUp() throws IOException {
+	public void mysetUp() throws Exception {
 
 		Properties p = new Properties();
 		FileInputStream fi = new FileInputStream(
@@ -141,7 +141,7 @@ public class SetUp {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void getResult(ITestResult result) throws IOException {
+	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
 			String screenShotPath = CaptureScreenshot.captureScreenshot(driver, result.getName());
