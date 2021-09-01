@@ -32,6 +32,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class SetUp {
+
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
@@ -39,11 +40,11 @@ public class SetUp {
 
 	public WebDriver driver = null;
 
-	public void mysetUp() throws IOException {
+	public void mysetUp() throws Exception {
 
 		Properties p = new Properties();
 		FileInputStream fi = new FileInputStream(
-				System.getProperty("user.dir") + "//src//main//java//Config File//global.properties");
+		System.getProperty("user.dir") + "//src//main//java//Config File//global.properties");
 		p.load(fi);
 
 		//new File(System.getProperty("user.dir") + "/src/main/java/com/qa/testdata/FreeCrmTestData.xlsx"))
@@ -92,12 +93,12 @@ public class SetUp {
 		driver.manage().window().maximize();
 	}
 
-	public void setExtentTest(ExtentTest et) {
+	public void setExtentTest(ExtentTest et) throws Exception{
 
 		exTest.set(et);
 	}
 
-	public ExtentTest getExtTest() {
+	public ExtentTest getExtTest() throws Exception{
 
 		return exTest.get();
 	}
@@ -141,7 +142,7 @@ public class SetUp {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void getResult(ITestResult result) throws IOException {
+	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
 			String screenShotPath = CaptureScreenshot.captureScreenshot(driver, result.getName());
@@ -162,8 +163,7 @@ public class SetUp {
 	}
 
 	@AfterSuite(alwaysRun = true)
-
-	public void tearDown() {
+	public void tearDown() throws Exception{
 		extent.flush();
 
 	}

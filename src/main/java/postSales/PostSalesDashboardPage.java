@@ -72,7 +72,7 @@ public class PostSalesDashboardPage extends SetUp {
 	
 	
 	// To Search Lead
-		public void searchLead(String lead) throws InterruptedException {
+		public void searchLead(String lead) throws Exception {
 			Thread.sleep(2000);
 			driver.findElement(searchField).click();
 			Thread.sleep(2000);
@@ -158,7 +158,7 @@ public class PostSalesDashboardPage extends SetUp {
 			driver.findElement(missedFollowups).click();
 		}
 		
-		public void openLeadProfile() throws InterruptedException {
+		public void openLeadProfile() throws Exception {
 			Thread.sleep(3000);
 			driver.findElement(actionBar).click();
 			

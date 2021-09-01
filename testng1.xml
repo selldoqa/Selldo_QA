@@ -7,17 +7,17 @@
     <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />
 </listeners> -->
 	 
-    <packages>
+ <packages>
      
-          <package name="userManagementPack" />
-	      <package name="exportPackage" /> 
-	      
+         <!--     <package name="userManagementPack" />
+	      <package name="exportPackage" />  -->
+	      <package name="PostSalesPack" /> 
          
        
-     </packages>
+     </packages>  
       
 	
-		<!-- <classes>
+	<!-- 	 <classes>
        		    <class name="adminPack.ClientCreationPostPaid" />
 		 		<class name="leadActivities.SendingEmailTest" />
 		 	    <class name="leadActivities.SendingEmailWithCCandBCCTest" />
@@ -29,9 +29,9 @@
 		 		<class name="leadActivities.LogOfflineCall_InboundAnsweredTest" />
 		 		<class name="leadActivities.LogOfflineCall_InboundNotAnsweredTest" />
 		 		<class name="leadActivities.LogOfflineCall_outboundAnsweredTest" />
-		 		<class name="leadActivities.LogOfflineCall_OutboundNotAnsweredTest" />
+		 		<class name="leadActivities.LogOfflineCall_OutboundNotAnsweredTest" /> 
 				
-		</classes>    -->
+		</classes>   -->
 
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
