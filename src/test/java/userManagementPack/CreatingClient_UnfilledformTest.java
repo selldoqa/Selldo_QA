@@ -29,7 +29,7 @@ public class CreatingClient_UnfilledformTest extends SetUp {
 
 	@BeforeTest
 
-	public void adminLogin() throws IOException, InterruptedException {
+	public void adminLogin() throws Exception {
 
 		mysetUp();
 
@@ -50,7 +50,7 @@ public class CreatingClient_UnfilledformTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		ClientLoginPage clientLogin = new ClientLoginPage(driver);
 
@@ -64,7 +64,7 @@ public class CreatingClient_UnfilledformTest extends SetUp {
 
 	@Test
 
-	public void creatingClient_UnfilledformTest() throws InterruptedException {
+	public void creatingClient_UnfilledformTest() throws Exception {
 
 		Thread.sleep(2000);
 

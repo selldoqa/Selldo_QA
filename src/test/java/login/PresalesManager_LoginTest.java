@@ -35,7 +35,7 @@ public class PresalesManager_LoginTest extends SetUp {
 	}
 
 	@Test
-	public void presalesManagerLoginTest() throws IOException, InterruptedException, EmailException {
+	public void presalesManagerLoginTest() throws Exception, EmailException {
 
 		wait = new WebDriverWait(driver, 8);
 		Properties property = new Properties();
@@ -63,7 +63,7 @@ public class PresalesManager_LoginTest extends SetUp {
 	}
 
 	@AfterTest
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 

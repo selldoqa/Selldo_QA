@@ -34,7 +34,7 @@ public class CreatingCampaign_FilledFormTest extends SetUp {
 
 	@BeforeTest
 
-	public void sales_presalesLogin() throws IOException, InterruptedException {
+	public void sales_presalesLogin() throws Exception {
 
 		mysetUp();
 

@@ -30,7 +30,7 @@ public class MarkingSiteVisitNotInterestedTest extends SetUp {
 
 	@BeforeTest
 
-	public void sales_presalesLogin() throws IOException {
+	public void sales_presalesLogin() throws Exception {
 
 		mysetUp();
 
@@ -109,7 +109,7 @@ public class MarkingSiteVisitNotInterestedTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 		getExtTest().log(Status.INFO, "browser closed.......");

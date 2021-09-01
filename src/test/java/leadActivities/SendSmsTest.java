@@ -32,7 +32,7 @@ public class SendSmsTest extends SetUp{
 
 	@BeforeTest
 
-	public void sales_presalesLogin() throws IOException {
+	public void sales_presalesLogin() throws Exception {
 
 		mysetUp();
 
@@ -52,7 +52,7 @@ public class SendSmsTest extends SetUp{
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 

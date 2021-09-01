@@ -22,7 +22,7 @@ public class SuperAdmin_LoginTest extends SetUp {
 
 	@Test
 
-	public void superAdmin_LoginTest() throws IOException, InterruptedException {
+	public void superAdmin_LoginTest() throws Exception {
 
 		mysetUp();
 

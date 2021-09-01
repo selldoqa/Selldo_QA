@@ -46,7 +46,7 @@ public class MarkingOnBreakTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 
@@ -61,7 +61,7 @@ public class MarkingOnBreakTest extends SetUp {
 
 	@Test
 
-	public void markingOnBreakTest() throws IOException, InterruptedException {
+	public void markingOnBreakTest() throws Exception {
 
 		Thread.sleep(3000);
 

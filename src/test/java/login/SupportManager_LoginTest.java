@@ -81,7 +81,7 @@ public class SupportManager_LoginTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 

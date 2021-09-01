@@ -40,7 +40,7 @@ public class bookedLeadSearchTest extends SetUp {
 
 	@BeforeTest
 
-	public void postsales_PostsalesManagerLogin() throws IOException, InterruptedException {
+	public void postsales_PostsalesManagerLogin() throws Exception {
 
 		mysetUp();
 
@@ -60,7 +60,7 @@ public class bookedLeadSearchTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 

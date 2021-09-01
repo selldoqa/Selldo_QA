@@ -28,7 +28,7 @@ public class ClientCreationPostPaid extends SetUp {
 
 	@BeforeTest
 
-	public void adminLogin() throws IOException, InterruptedException {
+	public void adminLogin() throws Exception {
 
 		mysetUp();
 
@@ -48,7 +48,7 @@ public class ClientCreationPostPaid extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		logger.info("Closing Browser......");
 		driver.close();
@@ -56,7 +56,7 @@ public class ClientCreationPostPaid extends SetUp {
 
 	@Test
 
-	public void creatingClientfromSupport() throws InterruptedException, AWTException, IOException {
+	public void creatingClientfromSupport() throws Exception {
 
 		Thread.sleep(2000);
 

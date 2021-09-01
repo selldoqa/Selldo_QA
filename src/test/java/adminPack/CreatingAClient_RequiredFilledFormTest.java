@@ -28,7 +28,7 @@ public class CreatingAClient_RequiredFilledFormTest extends SetUp {
 	@BeforeTest
 	
 	
-	public void adminLogin() throws IOException, InterruptedException {
+	public void adminLogin() throws Exception {
 
 		mysetUp();
 
@@ -49,7 +49,7 @@ public class CreatingAClient_RequiredFilledFormTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		ClientLoginPage cl = new ClientLoginPage(driver);
 

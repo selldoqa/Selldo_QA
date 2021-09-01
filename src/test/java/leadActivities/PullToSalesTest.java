@@ -35,7 +35,7 @@ public class PullToSalesTest extends SetUp {
 
 	@BeforeTest
 
-	public void adminLogin() throws IOException, InterruptedException {
+	public void adminLogin() throws Exception {
 
 		mysetUp();
 
@@ -69,7 +69,7 @@ public class PullToSalesTest extends SetUp {
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 

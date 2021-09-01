@@ -216,3 +216,4 @@ target/test-classes/userManagementPack/CreatingSalesUserTest.class
 target/test-classes/userManagementPack/EditingUserTest.class
 target/test-classes/userManagementPack/EditTeamTest.class
 target/test-classes/userManagementPack/SearchingUserTest.class
+/target/

@@ -35,7 +35,7 @@ public class Postsales_LoginTest extends SetUp{
 	}
 
 	@Test
-	public void postsalesLoginTest() throws IOException, InterruptedException, EmailException {
+	public void postsalesLoginTest() throws Exception, EmailException {
 
 		wait = new WebDriverWait(driver, 8);
 		Properties property = new Properties();
@@ -64,7 +64,7 @@ public class Postsales_LoginTest extends SetUp{
 
 	@AfterTest
 
-	public void endingTest() throws InterruptedException, EmailException {
+	public void endingTest() throws Exception {
 
 		Thread.sleep(3000);
 
