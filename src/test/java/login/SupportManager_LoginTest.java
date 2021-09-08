@@ -54,27 +54,23 @@ public class SupportManager_LoginTest extends SetUp {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		/*if (!driver.findElements(By.cssSelector("#main-menu-support-dashboard > a > i")).isEmpty()) {
+		if (!driver.findElements(By.cssSelector("#main-menu-support-dashboard > a > i")).isEmpty()) {
 
 			getExtTest().log(Status.INFO, "Logout and again login.......");
 			ashp.loggingOut();
 
-		}*/
-		
-		/*getExtTest().log(Status.INFO, "Logout and again login.......");
-		ashp.loggingOut();*/
-		
-		/*getExtTest().log(Status.INFO, "Logging in as Support Manager.......");
-		login.login(property.getProperty("support_manager_email"), property.getProperty("password"));*/
+			getExtTest().log(Status.INFO, "Logging in to Support Home Page......");
+			login.login(property.getProperty("support_manager_email"), property.getProperty("password"));
 
-		getExtTest().log(Status.INFO, "Logging in to Support Home Page......");
+		} else {
+
+			getExtTest().log(Status.INFO, "Logging in to Support Home Page......");
+
+		}
 		clientLoginPage.clientLogin(property.getProperty("v2_client_name"));
-
 		Thread.sleep(3000);
-
 		getExtTest().log(Status.INFO, "Verifying that client login is successfull.......");
 		ashp.verifyingClientLogin();
-
 		getExtTest().log(Status.INFO, "Logging out of Selldo......");
 		ashp.loggingOut();
 	}
