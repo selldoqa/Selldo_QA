@@ -92,7 +92,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>testng1.xml</suiteXmlFile>
+						<suiteXmlFile>testng4.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
