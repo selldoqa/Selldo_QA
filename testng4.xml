@@ -5,7 +5,7 @@
 
 	<classes>
        		    <class name="exportPackage.ExportBookingsTest" />
-		 		<class name="exportPackage.ExportCallsTest" />
+		 	<!-- 	<class name="exportPackage.ExportCallsTest" />
 		 		<class name="exportPackage.ExportCampaignsTest" />
 		 		<class name="exportPackage.ExportFollowupsTest" />
 		 		<class name="exportPackage.ExportInvoices_ItemizedBill_CalllTest" />
@@ -20,7 +20,7 @@
 		 		<class name="exportPackage.ExportTasksTest" />
 		 		<class name="exportPackage.ExportUserLogsTest" />
 		 		<class name="exportPackage.ExportUsersTest" />
-		 		<class name="exportPackage.ExportVirtualNumbersTest" />
+		 		<class name="exportPackage.ExportVirtualNumbersTest" />  -->
 		 		<class name="dashboardBucketsPack.MissedCalls_VerificationTest" />
 		 		<class name="dashboardBucketsPack.MissedFollowup_VerificationTest" />
 		 		<class name="dashboardBucketsPack.MissedSitevisit_VerificationTest" />
