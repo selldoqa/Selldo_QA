@@ -133,8 +133,7 @@ public class TodaysSitevisit_VerificationTest extends SetUp {
 		Thread.sleep(2000);
 
 		getExtTest().log(Status.INFO, "Getting Lead Id from toadys sitevisit bucket......");
-		String leadId_dashboardObj = driver.findElements(By.xpath(
-				"//a[@class='navigation clearfix todays_stat_show_lead']")).get(1)
+		String leadId_dashboardObj = driver.findElements(By.cssSelector(".navigation.clearfix.todays_stat_show_lead")).get(1)
 				.getText().replaceAll("[^0-9]+", " ").trim();
 		System.out.println("#" + leadId_dashboardObj);
 

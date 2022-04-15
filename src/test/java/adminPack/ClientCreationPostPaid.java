@@ -76,6 +76,15 @@ public class ClientCreationPostPaid extends SetUp {
 		CreateClientFormPage createClientForm = new CreateClientFormPage(driver);
 
 		GetTestData getTestData = new GetTestData();
+		
+		getExtTest().log(Status.INFO, "Entering Client first name...");
+		createClientForm.enterClientFirstName();
+		
+		getExtTest().log(Status.INFO, "Entering client last name....");
+		createClientForm.enterClientLastName();
+		
+		getExtTest().log(Status.INFO, "Entering Client Phone Number.......");
+		createClientForm.addClientPhoneNumber();
 
 		String businessName = getTestData.location.replaceAll("\\s+", "");
 		getExtTest().log(Status.INFO, "Entering Business Name as " + businessName + ".......");
@@ -89,6 +98,9 @@ public class ClientCreationPostPaid extends SetUp {
 
 		getExtTest().log(Status.INFO, "Entering Client Email.......");
 		createClientForm.enterClientEmail();
+		
+		getExtTest().log(Status.INFO, "Entering TRANSACTIONAL SMS MASK.......");
+		createClientForm.enterSMSmask("SDMASK");
 
 		/*
 		 * getExtTest().log(Status.INFO, "Clicking on upload button.......");
@@ -99,9 +111,6 @@ public class ClientCreationPostPaid extends SetUp {
 		createClientForm.uploadFile();
 
 		Thread.sleep(3000);
-
-		getExtTest().log(Status.INFO, "Entering Client Phone Number.......");
-		createClientForm.addClientPhoneNumber();
 
 		getExtTest().log(Status.INFO, "Entering Client Address.......");
 		createClientForm.enterAddress_NM(property.getProperty("Address_creatingAClient_FullyFilledFormTest"),

@@ -85,7 +85,7 @@ public class ReengagedLeads_VerificationTest extends SetUp{
 
 		getExtTest().log(Status.INFO, "Getting count of Reengaged Leads bucket......");
 		WebElement count_reengagedLeadsBucket = driver
-				.findElement(By.xpath("//div[text()='Re engaged Leads']/following::span[1]"));
+				.findElement(By.cssSelector("div[id='reengaged-leads'] span[class='title-item-body-count']"));
 		String leadCount_ReengagedLeadsBucket = count_reengagedLeadsBucket.getText().replaceAll("[^0-9]", "");
 		System.out.println(leadCount_ReengagedLeadsBucket);
 
@@ -95,7 +95,7 @@ public class ReengagedLeads_VerificationTest extends SetUp{
 		Thread.sleep(2000);
 		
 		getExtTest().log(Status.INFO, "Getting count of leads under Reengaged Leads list......");
-		String leadCount_ReengagedLeadsList = driver.findElement(By.xpath("//span[@class='leads-count-note']")).getText();
+		String leadCount_ReengagedLeadsList = driver.findElement(By.cssSelector("div[id='reengaged-leads'] span[class='title-item-body-count']")).getText();
 		System.out.println(leadCount_ReengagedLeadsList);
 
 		// Find the length of string.

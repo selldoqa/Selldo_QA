@@ -85,7 +85,7 @@ public class NewEnquiries_VerificationTest extends SetUp {
 		Thread.sleep(3000);
 
 		getExtTest().log(Status.INFO, "Getting count of New Enquiry bucket......");
-		WebElement count_b = driver.findElement(By.xpath("//div[text()='new enquries']/following::span[1]"));
+		WebElement count_b = driver.findElement(By.cssSelector("div[id='new-enquires'] span[class='title-item-body-count']"));
 		String leadCount_b = count_b.getText();
 		System.out.println(leadCount_b);
 
@@ -116,7 +116,7 @@ public class NewEnquiries_VerificationTest extends SetUp {
 		Thread.sleep(4000);
 
 		getExtTest().log(Status.INFO, "Getting count of New Enquiry bucket after sending email......");
-		WebElement count_a = driver.findElement(By.xpath("//div[text()='new enquries']/following::span[1]"));
+		WebElement count_a = driver.findElement(By.cssSelector("div[id='new-enquires'] span[class='title-item-body-count']"));
 		String leadCount_a = count_a.getText();
 		System.out.println(leadCount_a);
 

@@ -85,7 +85,7 @@ public class MissedCalls_VerificationTest extends SetUp {
 
 		getExtTest().log(Status.INFO, "Getting count of Missed Calls bucket......");
 		WebElement count_missedCallsBucket = driver
-				.findElement(By.xpath("//div[text()='missed calls']/following::span[1]"));
+				.findElement(By.cssSelector("div[id='missed-calls'] span[class='title-item-body-count']"));
 		String leadCount_missedCallsBucket = count_missedCallsBucket.getText();
 		System.out.println(leadCount_missedCallsBucket);
 

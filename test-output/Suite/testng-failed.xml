@@ -3,306 +3,254 @@
 <suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test parallel="methods" name="Test(failed)">
     <classes>
-      <class name="userManagementPack.AddingNewTeamTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="sales_presalesLogin"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="addingNewTeamTest"/>
-          <include name="endingTest"/>
-        </methods>
-      </class> <!-- userManagementPack.AddingNewTeamTest -->
-      <class name="userManagementPack.CreatingPostsalesUserTest">
-        <methods>
-          <include name="sales_presalesLogin"/>
-          <include name="creatingPostsalesUserTest"/>
-          <include name="setUp"/>
-          <include name="endingTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- userManagementPack.CreatingPostsalesUserTest -->
-      <class name="exportPackage.ExportUserLogsTest">
-        <methods>
-          <include name="exportUserLogsTest"/>
-          <include name="setUp"/>
-          <include name="endingTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- exportPackage.ExportUserLogsTest -->
-      <class name="exportPackage.ExportLeadsTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="endingTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="exportLeadsTest"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- exportPackage.ExportLeadsTest -->
-      <class name="userManagementPack.EditingUserTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="sales_presalesLogin"/>
-          <include name="endingTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="editingUserTest"/>
-        </methods>
-      </class> <!-- userManagementPack.EditingUserTest -->
-      <class name="userManagementPack.CreatingAdminUserTest">
+      <class name="workingTestscripts.SalesManager_LoginTest">
         <methods>
           <include name="endingTest"/>
-          <include name="sales_presalesLogin"/>
           <include name="setUp"/>
-          <include name="creatingAdminUserTest"/>
+          <include name="presales_LoginTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
+          <include name="salesManagerLoginTest"/>
         </methods>
-      </class> <!-- userManagementPack.CreatingAdminUserTest -->
-      <class name="exportPackage.ExportInvoices_ItemizedBill_EmailTest">
+      </class> <!-- workingTestscripts.SalesManager_LoginTest -->
+      <class name="workingTestscripts.TodaysFollowup_VerificationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="todaysFollowup_VerificationTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="appLogin"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- workingTestscripts.TodaysFollowup_VerificationTest -->
+      <class name="workingTestscripts.Admin_LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="adminLoginTest"/>
+          <include name="admin_LoginTest"/>
+          <include name="getResult"/>
+          <include name="endingTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.Admin_LoginTest -->
+      <class name="workingTestscripts.FollowupTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="scheduleFollowup"/>
+          <include name="tearDown"/>
+          <include name="appLogin"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- workingTestscripts.FollowupTests -->
+      <class name="workingTestscripts.MissedSitevisit_VerificationTest">
         <methods>
           <include name="sales_presalesLogin"/>
           <include name="setUp"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="exportInvoices_ItemizedBill_EmailTest"/>
           <include name="endingTest"/>
-        </methods>
-      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_EmailTest -->
-      <class name="userManagementPack.CreatingClient_UnfilledformTest">
-        <methods>
-          <include name="adminLogin"/>
-          <include name="creatingClient_UnfilledformTest"/>
-          <include name="setUp"/>
-          <include name="endingTest"/>
+          <include name="missedSitevisit_VerificationTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- userManagementPack.CreatingClient_UnfilledformTest -->
-      <class name="userManagementPack.CreatingPresalesUserTest">
+      </class> <!-- workingTestscripts.MissedSitevisit_VerificationTest -->
+      <class name="workingTestscripts.PresalesManager_LoginTest">
         <methods>
-          <include name="creatingPresalesUserTest"/>
-          <include name="sales_presalesLogin"/>
-          <include name="setUp"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="endingTest"/>
-        </methods>
-      </class> <!-- userManagementPack.CreatingPresalesUserTest -->
-      <class name="exportPackage.ExportUsersTest">
-        <methods>
-          <include name="endingTest"/>
-          <include name="setUp"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="exportUsersTest"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- exportPackage.ExportUsersTest -->
-      <class name="exportPackage.ExportTasksTest">
-        <methods>
-          <include name="endingTest"/>
-          <include name="sales_presalesLogin"/>
-          <include name="setUp"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="exportTasksTest"/>
-        </methods>
-      </class> <!-- exportPackage.ExportTasksTest -->
-      <class name="exportPackage.ExportCallsTest">
-        <methods>
-          <include name="endingTest"/>
-          <include name="exportCallsTest"/>
-          <include name="setUp"/>
-          <include name="sales_presalesLogin"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- exportPackage.ExportCallsTest -->
-      <class name="exportPackage.ExportProjectUnitsTest">
-        <methods>
-          <include name="exportProjectUnitsTest"/>
-          <include name="sales_presalesLogin"/>
+          <include name="presales_LoginTest"/>
+          <include name="presalesManagerLoginTest"/>
           <include name="endingTest"/>
           <include name="setUp"/>
           <include name="getResult"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- exportPackage.ExportProjectUnitsTest -->
-      <class name="userManagementPack.SearchingUserTest">
+      </class> <!-- workingTestscripts.PresalesManager_LoginTest -->
+      <class name="workingTestscripts.MissedFollowup_VerificationTest">
         <methods>
-          <include name="searchingUserTest"/>
+          <include name="missedFollowup_VerificationTest"/>
           <include name="setUp"/>
-          <include name="sales_presalesLogin"/>
           <include name="getResult"/>
           <include name="tearDown"/>
+          <include name="appLogin"/>
           <include name="endingTest"/>
         </methods>
-      </class> <!-- userManagementPack.SearchingUserTest -->
-      <class name="exportPackage.ExportSitevisitsTest">
+      </class> <!-- workingTestscripts.MissedFollowup_VerificationTest -->
+      <class name="workingTestscripts.PostSalesManager_LoginTest">
         <methods>
-          <include name="sales_presalesLogin"/>
-          <include name="exportSitevisitsTest"/>
-          <include name="setUp"/>
           <include name="endingTest"/>
+          <include name="setUp"/>
           <include name="getResult"/>
           <include name="tearDown"/>
+          <include name="presales_LoginTest"/>
+          <include name="postsalesManagerLoginTest"/>
         </methods>
-      </class> <!-- exportPackage.ExportSitevisitsTest -->
-      <class name="exportPackage.ExportInvoices_ItemizedBill_CalllTest">
+      </class> <!-- workingTestscripts.PostSalesManager_LoginTest -->
+      <class name="workingTestscripts.MissedCalls_VerificationTest">
         <methods>
-          <include name="exportInvoices_ItemizedBill_CalllTest"/>
-          <include name="setUp"/>
-          <include name="endingTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_CalllTest -->
-      <class name="exportPackage.ExportProjectsTest">
-        <methods>
-          <include name="exportProjectsTest"/>
           <include name="setUp"/>
           <include name="endingTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
+          <include name="appLogin"/>
+          <include name="missedCalls_VerificationTest"/>
         </methods>
-      </class> <!-- exportPackage.ExportProjectsTest -->
-      <class name="userManagementPack.EditTeamTest">
+      </class> <!-- workingTestscripts.MissedCalls_VerificationTest -->
+      <class name="workingTestscripts.SendingEmailTest">
         <methods>
-          <include name="endingTest"/>
-          <include name="sales_presalesLogin"/>
-          <include name="setUp"/>
-          <include name="getResult"/>
-          <include name="editTeamTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- userManagementPack.EditTeamTest -->
-      <class name="userManagementPack.CreatingPostsalesManagerTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="endingTest"/>
-          <include name="creatingPostsalesManagerTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- userManagementPack.CreatingPostsalesManagerTest -->
-      <class name="exportPackage.ExportVirtualNumbersTest">
-        <methods>
-          <include name="endingTest"/>
-          <include name="setUp"/>
-          <include name="sales_presalesLogin"/>
-          <include name="exportVirtualNumbersTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- exportPackage.ExportVirtualNumbersTest -->
-      <class name="exportPackage.ExportBookingsTest">
-        <methods>
-          <include name="exportBookingsTest"/>
-          <include name="endingTest"/>
-          <include name="setUp"/>
-          <include name="sales_presalesLogin"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- exportPackage.ExportBookingsTest -->
-      <class name="exportPackage.ExportFollowupsTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="exportFollowupsTest"/>
-          <include name="endingTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- exportPackage.ExportFollowupsTest -->
-      <class name="exportPackage.ExportInvoices_ItemizedBill_MarketingActivityTest">
-        <methods>
-          <include name="exportInvoices_ItemizedBill_MarketingActivityTest"/>
+          <include name="sendingEmailTest"/>
           <include name="sales_presalesLogin"/>
           <include name="setUp"/>
           <include name="endingTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_MarketingActivityTest -->
-      <class name="userManagementPack.CreatingSalesManagerTest">
+      </class> <!-- workingTestscripts.SendingEmailTest -->
+      <class name="workingTestscripts.SendingEmailWithTemplateTest">
         <methods>
-          <include name="setUp"/>
-          <include name="endingTest"/>
-          <include name="creatingSalesManagerTest"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
-        </methods>
-      </class> <!-- userManagementPack.CreatingSalesManagerTest -->
-      <class name="userManagementPack.CreatingSalesUserTest">
-        <methods>
-          <include name="creatingSalesUserTest"/>
+          <include name="sendingEmailWithTemplateTest"/>
           <include name="setUp"/>
           <include name="endingTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
           <include name="sales_presalesLogin"/>
         </methods>
-      </class> <!-- userManagementPack.CreatingSalesUserTest -->
-      <class name="userManagementPack.ClientCreationPostPaid">
+      </class> <!-- workingTestscripts.SendingEmailWithTemplateTest -->
+      <class name="workingTestscripts.NFA_VerificationTest">
         <methods>
-          <include name="endingTest"/>
+          <include name="nFA_VerificationTest"/>
           <include name="setUp"/>
-          <include name="adminLogin"/>
+          <include name="endingTest"/>
+          <include name="appLogin"/>
           <include name="getResult"/>
           <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.NFA_VerificationTest -->
+      <class name="workingTestscripts.Sales_LoginTest">
+        <methods>
+          <include name="salesLoginTest"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="presales_LoginTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.Sales_LoginTest -->
+      <class name="workingTestscripts.ClientCreationPostPaid">
+        <methods>
+          <include name="setUp"/>
+          <include name="endingTest"/>
           <include name="creatingClientfromSupport"/>
-        </methods>
-      </class> <!-- userManagementPack.ClientCreationPostPaid -->
-      <class name="userManagementPack.CreatingPresalesManagerTest">
-        <methods>
-          <include name="endingTest"/>
-          <include name="setUp"/>
-          <include name="creatingPresalesManagerTest"/>
-          <include name="getResult"/>
-          <include name="sales_presalesLogin"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- userManagementPack.CreatingPresalesManagerTest -->
-      <class name="exportPackage.ExportInvoices_ItemizedBill_SMSTest">
-        <methods>
-          <include name="exportInvoices_ItemizedBill_SMSTest"/>
-          <include name="setUp"/>
-          <include name="endingTest"/>
           <include name="getResult"/>
           <include name="tearDown"/>
-          <include name="sales_presalesLogin"/>
+          <include name="adminLogin"/>
         </methods>
-      </class> <!-- exportPackage.ExportInvoices_ItemizedBill_SMSTest -->
-      <class name="exportPackage.ExportPartnersTest">
+      </class> <!-- workingTestscripts.ClientCreationPostPaid -->
+      <class name="workingTestscripts.Postsales_LoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="exportPartnetsTest"/>
-          <include name="sales_presalesLogin"/>
+          <include name="postsalesLoginTest"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="presales_LoginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.Postsales_LoginTest -->
+      <class name="workingTestscripts.Presales_LoginTest">
+        <methods>
+          <include name="endingTest"/>
+          <include name="presalesLoginTest"/>
+          <include name="setUp"/>
+          <include name="presales_LoginTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.Presales_LoginTest -->
+      <class name="workingTestscripts.TodaysSitevisit_VerificationTest">
+        <methods>
+          <include name="todaysSitevisit_VerificationTest"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="endingTest"/>
+          <include name="appLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.TodaysSitevisit_VerificationTest -->
+      <class name="workingTestscripts.SupportManager_LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="admin_LoginTest"/>
+          <include name="getResult"/>
+          <include name="endingTest"/>
+          <include name="tearDown"/>
+          <include name="supportManager_LoginTest"/>
+        </methods>
+      </class> <!-- workingTestscripts.SupportManager_LoginTest -->
+      <class name="workingTestscripts.ChangingStage_IncomingToProspectTest">
+        <methods>
+          <include name="appLogin"/>
+          <include name="changingStage_IncomingToProspectTest"/>
+          <include name="setUp"/>
           <include name="getResult"/>
           <include name="tearDown"/>
           <include name="endingTest"/>
         </methods>
-      </class> <!-- exportPackage.ExportPartnersTest -->
-      <class name="exportPackage.ExportCampaignsTest">
+      </class> <!-- workingTestscripts.ChangingStage_IncomingToProspectTest -->
+      <class name="workingTestscripts.AddingANoteTest">
+        <methods>
+          <include name="sales_presalesLogin"/>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="addingNoteTest"/>
+        </methods>
+      </class> <!-- workingTestscripts.AddingANoteTest -->
+      <class name="workingTestscripts.AddConductedSiteVisitTest">
         <methods>
           <include name="endingTest"/>
+          <include name="addConductedSiteVisitTest"/>
           <include name="setUp"/>
+          <include name="appLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.AddConductedSiteVisitTest -->
+      <class name="workingTestscripts.SuperAdmin_LoginTest">
+        <methods>
+          <include name="superAdmin_LoginTest"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workingTestscripts.SuperAdmin_LoginTest -->
+      <class name="workingTestscripts.SendingEmailWithCCandBCCTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="endingTest"/>
           <include name="sales_presalesLogin"/>
           <include name="getResult"/>
           <include name="tearDown"/>
-          <include name="exportCampaignsTest"/>
+          <include name="sendingEmailWithCCandBCCTest"/>
         </methods>
-      </class> <!-- exportPackage.ExportCampaignsTest -->
+      </class> <!-- workingTestscripts.SendingEmailWithCCandBCCTest -->
+      <class name="workingTestscripts.NewEnquiries_VerificationTest">
+        <methods>
+          <include name="newEnquiries_VerificationTest"/>
+          <include name="setUp"/>
+          <include name="appLogin"/>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="endingTest"/>
+        </methods>
+      </class> <!-- workingTestscripts.NewEnquiries_VerificationTest -->
+      <class name="workingTestscripts.ReassigningLeadTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="endingTest"/>
+          <include name="getResult"/>
+          <include name="adminLogin"/>
+          <include name="tearDown"/>
+          <include name="reassigningLeadTest"/>
+        </methods>
+      </class> <!-- workingTestscripts.ReassigningLeadTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

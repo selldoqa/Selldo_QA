@@ -33,7 +33,7 @@ public class CreateClientFormPage extends SetUp {
 	// By UploadLogoButton = By.xpath("//input[@id='client_image']");
 	By UploadLogoButton = By.cssSelector("input#client_image");
 	By PhoneField_CD = By.xpath("//h3[text()='Client details']/following::input[8]");
-	By clientPhone = By.xpath("//h3[text()='Client details']/following::input[7]");
+	By clientPhone = By.xpath("//body/div[@class='wrapper']/div[@id='content']/form[@id='client_form']/div[@class='panel panel-default']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-6 col-sm-12']/div[1]/div[1]/input[1]");
 	By CityForIndianPRIDropdown = By.xpath("//span[text()='Choose City For Indian PRI(Landline)']");
 	By CityForIndianPRIField = By.xpath(".//*[@id='select2-drop']/div/input");
 	By CityForIndianPRI_dd = By.xpath(".//*[@id='select2-drop']/ul/li/div");
@@ -46,7 +46,7 @@ public class CreateClientFormPage extends SetUp {
 	By CircleForIndianMobileNumber_dd = By.xpath(".//*[@id='select2-drop']/ul/li/div");
 	By IndianMobileNumbersDropdown = By.xpath("//label[text()='Indian Mobile Numbers']/following::span[1]");
 	By IndianMobileNumberField = By.xpath(".//*[@id='select2-drop']/div/input");
-	By SMSMaskField = By.xpath("//input[@id='sms_mask']");
+	By SMSMaskField = By.xpath("//input[@id='transactional_sms_mask']"); 
 	By VirtualNumbersField = By.id("s2id_autogen6");
 	By VirtualNumber_dd = By.xpath(".//*[@id='select2-drop']/ul/li/div/span");
 	By TimeZoneDropdown_CD = By.xpath("//select[@id='client_time_zone']");
@@ -118,7 +118,7 @@ public class CreateClientFormPage extends SetUp {
 	By CityForIndianPRIRequiredMessage = By
 			.xpath("//label[text()='City for Indian PRI (Landline)']/following::span[3]");
 	By IndianPRIRequiredMessage = By.xpath("//label[text()='Indian PRI (Landline)']/following::span[3]");
-	By SMSmaskFieldRequiredMessage = By.xpath("//label[text()='Sms Mask']/following::span[1]");
+	By SMSmaskFieldRequiredMessage = By.xpath("//input[@id='transactional_sms_mask']"); 
 	By AddressFieldRequiredMessage = By.xpath("//input[@id='client_address_attributes_address1']/following::span[1]");
 	By CityFieldRequiredMessage = By.xpath("//input[@id='client_address_attributes_city']/following::span[1]");
 	By StateDropdownRequiredMessage = By
@@ -159,6 +159,14 @@ public class CreateClientFormPage extends SetUp {
 		driver.findElement(clientPhoneNumber).sendKeys(clientPhoneObj);
 	}
 
+	public void enterFirstName(String firstname) {
+		driver.findElement(FirstNameField).sendKeys(firstname);
+	}
+	
+	public void enterLastName(String lastname) {
+		driver.findElement(LastNameField).sendKeys(lastname);
+	}
+	
 	public void enterBusinessName(String businessName) {
 		// String businessName = getTestData.location;
 		driver.findElement(BusinessNameField).sendKeys(businessName);

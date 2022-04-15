@@ -23,7 +23,7 @@ public class SiteVisitPage extends SetUp {
 			"//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-orient-left datepicker-orient-top']//tr//td");
 	By selectToday = By.cssSelector("div.datepicker-days > table > tbody > tr > td.active.day");
 	By scheduleOnTime = By.xpath("//label[text()='Schedule on (date & time)']/following::span[2]");
-	By scheduleSiteVisitButton = By.xpath("//button[text()='Schedule Site visit']");
+	By scheduleSiteVisitButton = By.xpath("//button[normalize-space()='Schedule Site visit']");
 	public By siteVisitConfirmation = By.xpath("//label[text()='Site visit Confirmation']/following::span[1]");
 	By tentative_dd = By.cssSelector("#select2-drop > div > input");
 	By ignoreAndScheduleButton = By.xpath("//button[text()=' Ignore & Schedule ']");

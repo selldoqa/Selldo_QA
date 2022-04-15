@@ -154,7 +154,7 @@ public class ImportPage extends SetUp {
 	public void clickOnUploadButton() {
 		WebElement browse = driver.findElement(uploadButton);
 		// pass the path of the file to be uploaded using Sendkeys method
-		browse.sendKeys("//home//amura//Documents//Bulk Import//importLeads 28th aug.xls");
+		browse.sendKeys("/home/yash/Documents/Smoke Test/smoke_test.xls");
 	}
 
 	public void selectCampaign() {

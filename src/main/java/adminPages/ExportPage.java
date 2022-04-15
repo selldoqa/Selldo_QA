@@ -56,7 +56,8 @@ public class ExportPage extends SetUp {
 	By exportTypeSpan_All = By.xpath("//ul[@class='select2-results']//li");
 	By applyButton = By.xpath("//input[@value='Apply']");
 	By clearAllLink = By.xpath("//a[text()='Clear All']");
-	By crossExportIcon = By.cssSelector("#modal-remote-form-inner > div > div > div.modal-header > button > i");
+	By crossExportIcon = By.xpath("//button[@class='close']//i[@class='ion-android-close']");
+			//.cssSelector("button[class='close'] i[class='ion-android-close']");
 	By crossFilterIcon = By.xpath("//input[@value='Apply']/preceding::i[@class='ion-android-close'][1]");
 	By clickToExpandLink = By.xpath("//a[text()='Home']/following::b[1]");
 	By selectProject = By.cssSelector("div#select2-drop ul li:nth-child(17)");
@@ -561,7 +562,7 @@ public class ExportPage extends SetUp {
 		
 		//This is used to select the cross icon to close the model
 		
-		WebElement element = driver.findElement (crossExportIcon);
+		WebElement element = driver.findElement(crossExportIcon);
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript ("arguments[0].click();" , element);
 	    

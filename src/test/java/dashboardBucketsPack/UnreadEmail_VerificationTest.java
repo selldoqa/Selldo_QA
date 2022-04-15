@@ -86,7 +86,7 @@ public class UnreadEmail_VerificationTest extends SetUp {
 		Thread.sleep(3000);
 
 		getExtTest().log(Status.INFO, "Getting count of Unread Email bucket......");
-		WebElement count_unreadEmailBucket = driver.findElement(By.xpath("//div[text()='unread emails']/following::span[1]"));
+		WebElement count_unreadEmailBucket = driver.findElement(By.cssSelector("div[id='pending-emails'] span[class='title-item-body-count']"));
 		String leadCount_unreadEmailBucket = count_unreadEmailBucket.getText();
 		System.out.println(leadCount_unreadEmailBucket);
 
@@ -99,7 +99,7 @@ public class UnreadEmail_VerificationTest extends SetUp {
 		Thread.sleep(3000);
 
 		getExtTest().log(Status.INFO, "Getting count of leads under pending email list......");
-		String leadCount_pendingEmail = driver.findElement(By.xpath("//span[@class='leads-count-note']")).getText();
+		String leadCount_pendingEmail = driver.findElement(By.cssSelector("div[id='pending-emails'] span[class='title-item-body-count']")).getText();
 		System.out.println(leadCount_pendingEmail);
 
 		// Find the length of string.

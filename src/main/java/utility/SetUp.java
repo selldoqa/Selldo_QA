@@ -30,6 +30,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SetUp {
 
@@ -56,21 +57,21 @@ public class SetUp {
 			driver = new FirefoxDriver();
 		} else if (p.getProperty("browser").contains("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver", "//home//amura//SeleniumStuffs//chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "//home//amura//SeleniumStuffs//chromedriver");
 			
 			// To run on local comment above and uncomment below			
-			//System.setProperty("webdriver.chrome.driver","/home/selldo/Downloads/Software/chromedriver");
+			System.setProperty("webdriver.chrome.driver","/home/yash/Documents/chromedriver_linux64/chromedriver");
 
 				
 			//To upload file in headless mode
 			System.setProperty("java.awt.headless", "false");
 
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--start-maximized");
+			options.addArguments("--headless", "--window-size=1920,1200", "--no-sandbox");
 
 			// To run scripts in headless mode on jenkins
-			options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-
+			options.addArguments("--headless", "window-size=1920,1200", "--no-sandbox");
+			
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
@@ -78,8 +79,8 @@ public class SetUp {
 
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			driver = new ChromeDriver(capabilities);
-
+			driver = new ChromeDriver( capabilities);
+			
 		} else {
 			Internetexplorer();
 		}
@@ -137,7 +138,7 @@ public class SetUp {
 		htmlReporter.config().setDocumentTitle("AutomationTesting.in Demo Report");
 		htmlReporter.config().setReportName("Automation Report");
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-		htmlReporter.config().setTheme(Theme.DARK);
+		htmlReporter.config().setTheme(Theme.STANDARD);
 
 	}
 

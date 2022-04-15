@@ -16,7 +16,7 @@ import utility.SetUp;
 public class SalesPresalesDashboardPage extends SetUp {
 
 	By leadsIcon = By.cssSelector("i.ion-ios-people");
-	By allLeadsLink = By.xpath("//a[text()='All Leads']");
+	By allLeadsLink = By.xpath("//a[normalize-space()='All Leads']"); 
 	By inventoryCubeIcon = By.cssSelector("i.ion-cube");
 	By saveAsButton = By.xpath("//button[text()='Save As']");
 
@@ -32,10 +32,10 @@ public class SalesPresalesDashboardPage extends SetUp {
 	By viewProfileButton = By.xpath("//button[text()='View Profile']");
 	By details = By.cssSelector("div.dropdown-menu.dropdown-menu-right.show button.dropdown-item.goto_details");
 	public By searchField = By.xpath("//span[text()='Search...']");
-	By newEnquiryBucket = By.xpath("//div[text()='new enquries']/following::span[1]");
-	By reengagedLeadsBucket = By.xpath("//div[text()='Re engaged Leads']/following::span[1]");
-	By missedCallsBucket = By.xpath("//div[text()='missed calls']/following::span[1]");
-	By nFABucket = By.xpath("//div[text()='No future activity']/following::span[1]");
+	By newEnquiryBucket = By.xpath("//div[@id='new-enquires']//div[@class='tile-item-body text-success']");
+	By reengagedLeadsBucket = By.xpath("//div[@id='reengaged-leads']//div[@class='tile-item-body text-success']");
+	By missedCallsBucket = By.xpath("//div[@id='missed-calls']//div[@class='tile-item-body text-danger']"); 
+	By nFABucket = By.xpath("//div[@id='nfa-leads']//div[@class='tile-item-body text-danger']");
 	By userAccountIcon = By.cssSelector("i#user-account-icon");
 	By availableLink = By.cssSelector("span.status");
 	By editProfile = By.xpath("//a[text()='Edit Profile']");

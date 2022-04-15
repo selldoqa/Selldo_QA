@@ -85,7 +85,7 @@ public class NFA_VerificationTest extends SetUp {
 		Thread.sleep(3000);
 
 		getExtTest().log(Status.INFO, "Getting count of No Future Activity bucket......");
-		WebElement count_b = driver.findElement(By.xpath("//div[text()='No future activity']/following::span[1]"));
+		WebElement count_b = driver.findElement(By.cssSelector("div[id='nfa-leads'] span[class='title-item-body-count']"));
 		String leadCount_b = count_b.getText();
 		System.out.println(leadCount_b);
 
@@ -142,7 +142,7 @@ public class NFA_VerificationTest extends SetUp {
 		Thread.sleep(3000);
 
 		getExtTest().log(Status.INFO, "Getting count of No Future Activity bucket......");
-		WebElement count_a = driver.findElement(By.xpath("//div[text()='No future activity']/following::span[1]"));
+		WebElement count_a = driver.findElement(By.cssSelector("div[id='nfa-leads'] span[class='title-item-body-count']"));
 		String leadCount_a = count_a.getText();
 		System.out.println(leadCount_a);
 

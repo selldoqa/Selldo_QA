@@ -78,6 +78,12 @@ public class CreatingAClient_FullyFilledFormTest extends SetUp {
 		clientLogin.clickOnCreateClientButton();
 
 		CreateClientFormPage createClientForm = new CreateClientFormPage(driver);
+		
+		test.log(Status.INFO, "Entering Client first name...");
+		createClientForm.enterClientFirstName();
+		
+		test.log(Status.INFO, "Entering client last name....");
+		createClientForm.enterClientLastName();
 
 		test.log(Status.INFO, "Entering Business Name.......");
 		String clientObj = property.getProperty("ClientName_creatingAClient_FullyFilledFormTest");

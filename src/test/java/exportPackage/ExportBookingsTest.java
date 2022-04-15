@@ -109,6 +109,8 @@ public class ExportBookingsTest extends SetUp {
 		getExtTest().log(Status.INFO, "Clicking on Next Button.......");
 		exportPage.clickOnNextButton();
 		
+		exportPage.scrollToBottom();
+		
 		getExtTest().log(Status.INFO, "Clicking on Export Button.......");
 		exportPage.clickOnExportButton();
 

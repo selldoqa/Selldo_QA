@@ -47,7 +47,7 @@ public class LeadProfilePage extends SetUp {
 			.cssSelector("body > nav > div.top-navigation-right-panel > div > div.dropdown.float-right > a > i");
 	By logout = By.cssSelector("[data-method=\"delete\"]");
 	By backToAdmin = By.cssSelector("a[href='/client/signout']");
-	By more_d = By.xpath("//*[@id=\"activity_container\"]/div/div[1]/div[1]/nav/li[5]/a");
+	By more_d = By.xpath("//div[@class='col-sm-12 activity-responsive-tabs col-lg-5 pr-0']//a[@role='button'][normalize-space()='More']");
 	By sitevisit_d = By.xpath("//a[@class='nav-link'][@data-value='SiteVisit']");
 	By sitevisit_d_actionbar = By.xpath("//div[@class='col-lg-1']");
 	By sitevisit_confirm = By.xpath("//a[text()='Confirm']");
