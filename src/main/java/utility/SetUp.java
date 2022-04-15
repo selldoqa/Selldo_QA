@@ -56,7 +56,7 @@ public class SetUp {
 			System.setProperty("webdriver.gecko.driver", "//home//amura//SeleniumStuffs//geckodriver");
 			driver = new FirefoxDriver();
 		} else if (p.getProperty("browser").contains("chrome")) {
-
+// test commit
 			//System.setProperty("webdriver.chrome.driver", "//home//amura//SeleniumStuffs//chromedriver");
 			
 			// To run on local comment above and uncomment below			
